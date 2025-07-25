@@ -89,7 +89,7 @@
             </header>
 
             <div class="container">
-                <aside class="sidebar shadow-md flex flex-col mt-4">
+                <aside class="sidebar shadow-md flex flex-col mt-4 hidden md:flex">
                     <h3>Filters</h3>
                     <label><input type="checkbox" class="filter" value="Summer" /> Summer</label><br>
                     <label><input type="checkbox" class="filter" value="Winter" /> Winter</label><br>
@@ -97,7 +97,7 @@
                     <label><input type="checkbox" class="filter" value="Casual" /> Casual</label><br>
                 </aside>
 
-                <main class="product-grid" id="productGrid">
+                <main class="product-grid grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4" id="productGrid">
                     <!-- 20 cards hard-coded in HTML -->
                     <div class="card" data-title="Floral Summer Dress" data-category="Summer">
                         <img src="./images/q.jpg" />
