@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Perseus</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Flashsale -->
+  <div class="bg-black text-white flex justify-between px-4 py-2 items-center">
+    <div class="font-bold">Sign up and get 20% off on your first order</div>
+    <button onclick="this.parentElement.style.display='none'" class="text-xl">X</button>
+  </div>
+
+  <!-- Header -->
+  <header class="shadow-md px-4 py-2 flex justify-between items-center bg-white">
+    <div class="flex items-center gap-4">
+      <img src="./images/Mediamodifier-Design-Template.png" alt="Logo" class="w-12 h-12" />
+      <h1 class="text-3xl font-bold">Perseus</h1>
+    </div>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex gap-6 font-bold text-gray-600 text-lg">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="index.html">Featured</a>
+      <a href="index.html">Special</a>
+      <a href="about.html" >About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Hamburger -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer md:hidden" viewBox="0 0 640 640" onclick="toggleMobileMenu()">
+      <path fill="#000000" d="M96 160C96 142.3 110.3 128 128 128H512C529.7 128 544 142.3 544 160S529.7 192 512 192H128C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288H512C529.7 288 544 302.3 544 320S529.7 352 512 352H128C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512H128C110.3 512 96 497.7 96 480S110.3 448 128 448H512C529.7 448 544 462.3 544 480z"/>
+    </svg>
+  </header>
+
+  <!-- Mobile Sidebar Menu -->
+  <div id="mobile-menu" class="fixed top-0 right-0 h-full w-64 bg-[#cfc5bc] shadow-lg p-6 transform translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden flex flex-col gap-4 font-bold text-gray-700 text-lg">
+    <a href="#" onclick="toggleMobileMenu()" class="text-right text-[#810000] text-2xl">✕</a>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="index.html">Featured</a>
+    <a href="index.html">Special</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- About Content -->
+  <main class="max-w-4xl mx-auto mt-10 p-6 bg-white shadow-md rounded-lg">
+    <h2 class="text-4xl font-bold mb-4 text-center">About Me</h2>
+    <p class="text-lg leading-relaxed mb-6">
+      Hi, I'm <strong>Pradeep Kumar</strong> — a passionate web developer and electronics hobbyist.
+      I love turning ideas into real-world projects using code, creativity, and innovation.
+    </p>
+
+    <h3 class="text-2xl font-semibold mb-3">Connect with Me</h3>
+    <div class="flex gap-6 text-2xl mt-4">
+      <a href="https://linkedin.com/in/pradeepkumarsurendiran" target="_blank" class="hover:text-blue-600"><i class="fab fa-linkedin"></i></a>
+      <a href="https://instagram.com/pradeepkuar673atyt" target="_blank" class="hover:text-pink-600"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/pradeepkumar673" target="_blank" class="hover:text-gray-900"><i class="fab fa-github"></i></a>
+    </div>
+  </main>
+
+  <script>
+    function toggleMobileMenu() {
+      document.getElementById("mobile-menu").classList.toggle("translate-x-full");
+    }
+  </script>
+</body>
+
+</html>

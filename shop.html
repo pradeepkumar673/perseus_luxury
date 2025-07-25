@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perseus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        #main{
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <img id="logo" src="./images/Mediamodifier-Design-Template.png" alt="Logo" width="120" height="auto">
+        <div class="loader-text" style="font-family: Cedarville Cursive, cursive;">Perseus</div>
+    </div>
+
+    <!-- Main Content-->
+    <div id="main-content">
+        <div id="Flashsale">
+            <div class="flash-message">Sign up and get 20% off on your first order</div>
+            <button id="close-btn">X</button>
+        </div>
+
+
+        <header id="navbar" class="shadow-md px-4 py-2 flex justify-between items-center">
+            <div class="flex flex-row items-center gap-4">
+                <img id="nav-logo" src="./images/Mediamodifier-Design-Template.png" alt="Logo">
+                <h1 class="nav-title text-3xl font-bold">Perseus</h1>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer md:hidden"
+                viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                <path fill="#000000" d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7
+                        128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 
+                        192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 
+                        128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 
+                        512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 
+                        512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 
+                        448L512 448C529.7 448 544 462.3 544 480z" />
+            </svg>
+
+
+
+            <nav class="nav-links text-lg font-bold text-gray-600 hidden md:flex">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="index.html">Feautured</a>
+                <a href="index.html">Special</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+
+            </nav>
+
+            <!-- Mobile-->
+            <div id="mobile-menu"
+                class="fixed top-0 right-0 h-full w-64 bg-[#cfc5bc] shadow-lg p-6 transform translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden flex flex-col gap-4 font-bold text-gray-700 text-lg">
+                <a href="#" id="close-mobile-menu" class="mt-0 text-right text-[#810000]">✕</a>
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="index.html">Featured</a>
+                <a href="index.html">Special</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+
+        </header>
+
+        <main id="main">
+
+
+            <header class="flex flex-row items-center justify-between m-4 p-4">
+                <h1 class="text-3xl font-bold mb-4">Clothing Shop</h1>
+                <input class="p-2 m-2 w-1/2" type="text" id="searchInput" placeholder="Search clothes..." />
+            </header>
+
+            <div class="container">
+                <aside class="sidebar shadow-md flex flex-col mt-4">
+                    <h3>Filters</h3>
+                    <label><input type="checkbox" class="filter" value="Summer" /> Summer</label><br>
+                    <label><input type="checkbox" class="filter" value="Winter" /> Winter</label><br>
+                    <label><input type="checkbox" class="filter" value="Formal" /> Formal</label><br>
+                    <label><input type="checkbox" class="filter" value="Casual" /> Casual</label><br>
+                </aside>
+
+                <main class="product-grid" id="productGrid">
+                    <!-- 20 cards hard-coded in HTML -->
+                    <div class="card" data-title="Floral Summer Dress" data-category="Summer">
+                        <img src="./images/q.jpg" />
+                        <div class="title">Floral Summer Dress</div>
+                        <div class="price">₹999</div>
+                        <div class="discount">20% OFF</div>
+                        <div class="rating">★★★★☆</div> <button class="add-to-cart bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">Add to Cart</button>
+                    </div>
+
+                    <div class="card" data-title="Winter Jacket" data-category="Winter">
+                        <img src="./images/w.jpg" />
+                        <div class="title">Winter Jacket</div>
+                        <div class="price">₹1999</div>
+                        <div class="discount">15% OFF</div>
+                        <div class="rating">★★★★★</div> <button class="add-to-cart bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">Add to Cart</button>
+                    </div>
+
+                    <div class="card" data-title="Formal Shirt" data-category="Formal">
+                        <img src="./images/e.jpg" />
+                        <div class="title">Formal Shirt</div>
+                        <div class="price">₹799</div>
+                        <div class="discount">10% OFF</div>
+                        <div class="rating">★★★☆☆</div><button class="add-to-cart bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">Add to Cart</button>
+                    </div>
+
+                    <div class="card" data-title="Casual T-shirt" data-category="Casual">
+                        <img src="./images/r.jpg" />
+                        <div class="title">Casual T-shirt</div>
+                        <div class="price">₹499</div>
+                        <div class="discount">5% OFF</div>
+                        <div class="rating">★★★★☆</div><button class="add-to-cart bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">Add to Cart</button>
+                    </div>
+
+                    <div class="card" data-title="Summer Shorts" data-category="Summer">
+                        <img src="./images/t.jpg" />
+                        <div class="title">Summer Shorts</div>
+                        <div class="price">₹599</div>
+                        <div class="discount">25% OFF</div>
+                        <div class="rating">★★★★☆</div><button class="add-to-cart bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">Add to Cart</button>
+                    </div>
+
+                    <div class="card" data-title="Winter Sweater" data-category="Winter">
+                        <img src="./images/y.jpg" />
+                        <div class="title">Winter Sweater</div>
+                        <div class="price">₹1499</div>
+                        <div class="discount">10% OFF</div>
+                        <div class="rating">★★★★★</div><button class="add-to-cart bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">Add to Cart</button>
+                    </div>
+
+                    <div class="card" data-title="Formal Pants" data-category="Formal">
+                        <img src="./images/222.jpg" />
+                        <div class="title">Formal Pants</div>
+                        <div class="price">₹899</div>
+                        <div class="discount">15% OFF</div>
+                        <div class="rating">★★★☆☆</div><button class="add-to-cart bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">Add to Cart</button>
+                    </div>
+
+                    <div class="card" data-title="Casual Hoodie" data-category="Casual">
+                        <img src="./images/u.jpg" />
+                        <div class="title">Casual Hoodie</div>
+                        <div class="price">₹1099</div>
+                        <div class="discount">30% OFF</div>
+                        <div class="rating">★★★★★</div><button class="add-to-cart bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">Add to Cart</button>
+                    </div>
+
+                    <div class="card" data-title="Linen Shirt" data-category="Summer">
+                        <img src="./images/i.jpg" />
+                        <div class="title">Linen Shirt</div>
+                        <div class="price">₹699</div>
+                        <div class="discount">10% OFF</div>
+                        <div class="rating">★★★★☆</div><button class="add-to-cart bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">Add to Cart</button>
+                    </div>
+
+                    <div class="card" data-title="Wool Coat" data-category="Winter">
+                        <img src="./images/o.jpg" />
+                        <div class="title">Wool Coat</div>
+                        <div class="price">₹2499</div>
+                        <div class="discount">20% OFF</div>
+                        <div class="rating">★★★★★</div><button class="add-to-cart bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">Add to Cart</button>
+                    </div>
+
+                    <div class="card" data-title="Blazer" data-category="Formal">
+                        <img src="./images/p.jpg" />
+                        <div class="title">Blazer</div>
+                        <div class="price">₹2199</div>
+                        <div class="discount">10% OFF</div>
+                        <div class="rating">★★★★☆</div><button class="add-to-cart bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">Add to Cart</button>
+                    </div>
+
+                    <div class="card" data-title="Joggers" data-category="Casual">
+                        <img src="./images/a.jpg" />
+                        <div class="title">Joggers</div>
+                        <div class="price">₹799</div>
+                        <div class="discount">15% OFF</div>
+                        <div class="rating">★★★★☆</div><button class="add-to-cart bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">Add to Cart</button>
+                    </div>
+
+                    <div class="card" data-title="Sleeveless Top" data-category="Summer">
+                        <img src="./images/s.jpg" />
+                        <div class="title">Sleeveless Top</div>
+                        <div class="price">₹499</div>
+                        <div class="discount">5% OFF</div>
+                        <div class="rating">★★★☆☆</div><button class="add-to-cart bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">Add to Cart</button>
+                    </div>
+
+                    <div class="card" data-title="Thermal Wear" data-category="Winter">
+                        <img src="./images/d.jpg" />
+                        <div class="title">Thermal Wear</div>
+                        <div class="price">₹999</div>
+                        <div class="discount">25% OFF</div>
+                        <div class="rating">★★★★☆</div><button class="add-to-cart bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">Add to Cart</button>
+                    </div>
+
+                    <div class="card" data-title="Formal Blouse" data-category="Formal">
+                        <img src="./images/f.jpg" />
+                        <div class="title">Formal Blouse</div>
+                        <div class="price">₹999</div>
+                        <div class="discount">10% OFF</div>
+                        <div class="rating">★★★★☆</div><button class="add-to-cart bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">Add to Cart</button>
+                    </div>
+
+                    <div class="card" data-title="Denim Jacket" data-category="Casual">
+                        <img src="./images/g.jpg" />
+                        <div class="title">Denim Jacket</div>
+                        <div class="price">₹1299</div>
+                        <div class="discount">15% OFF</div>
+                        <div class="rating">★★★★★</div><button class="add-to-cart bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">Add to Cart</button>
+                    </div>
+
+                    <div class="card" data-title="Beach Wear" data-category="Summer">
+                        <img src="./images/h.jpg" />
+                        <div class="title">Beach Wear</div>
+                        <div class="price">₹899</div>
+                        <div class="discount">20% OFF</div>
+                        <div class="rating">★★★☆☆</div><button class="add-to-cart bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">Add to Cart</button>
+                    </div>
+
+                    <div class="card" data-title="Wool Scarf" data-category="Winter">
+                        <img src="./images/j.jpg" />
+                        <div class="title">Wool Scarf</div>
+                        <div class="price">₹399</div>
+                        <div class="discount">10% OFF</div>
+                        <div class="rating">★★★★☆</div><button class="add-to-cart bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">Add to Cart</button>
+                    </div>
+
+                    <div class="card" data-title="Tie & Shirt" data-category="Formal">
+                        <img src="./images/k.jpg" />
+                        <div class="title">Tie & Shirt</div>
+                        <div class="price">₹1099</div>
+                        <div class="discount">10% OFF</div>
+                        <div class="rating">★★★★★</div><button class="add-to-cart bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">Add to Cart</button>
+                    </div>
+
+                    <div class="card" data-title="Graphic Tee" data-category="Casual">
+                        <img src="images/l.jpg" />
+                        <div class="title">Graphic Tee</div>
+                        <div class="price">₹499</div>
+                        <div class="discount">30% OFF</div>
+                        <div class="rating">★★★★★</div><button class="add-to-cart bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">Add to Cart</button>
+                    </div>
+                </main>
+            </div>
+
+
+
+
+
+
+
+
+        </main>
+    </div>
+    <script src="script.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("searchInput");
+    const checkboxes = document.querySelectorAll(".filter");
+    const cards = document.querySelectorAll(".card");
+
+    function filterCards() {
+        const searchText = searchInput.value.toLowerCase().trim();
+        const selectedCategories = Array.from(checkboxes)
+            .filter(cb => cb.checked)
+            .map(cb => cb.value.toLowerCase());
+
+        cards.forEach(card => {
+            const title = card.getAttribute("data-title").toLowerCase();
+            const category = card.getAttribute("data-category").toLowerCase();
+
+            const matchesSearch = title.includes(searchText);
+            const matchesCategory = selectedCategories.length === 0 || selectedCategories.includes(category);
+
+            if (matchesSearch && matchesCategory) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    }
+
+    
+    searchInput.addEventListener("input", filterCards);
+
+    
+    checkboxes.forEach(cb => cb.addEventListener("change", filterCards));
+});
+</script>
+
+</body>

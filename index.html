@@ -1,0 +1,544 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Perseus</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+        <!-- Font Awesome CDN -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <!-- Preloader -->
+        <div id="preloader">
+            <img id="logo" src="./images/Mediamodifier-Design-Template.png" alt="Logo" width="120" height="auto">
+            <div class="loader-text" style="font-family: Cedarville Cursive, cursive;">Perseus</div>
+        </div>
+
+        <!-- Main Content-->
+        <div id="main-content">
+            <div id="Flashsale">
+                <div class="flash-message">Sign up and get 20% off on your first order</div>
+                <button id="close-btn">X</button>
+            </div>
+
+
+            <header id="navbar" class="shadow-md px-4 py-2 flex justify-between items-center">
+                <div class="flex flex-row items-center gap-4">
+                    <img id="nav-logo" src="./images/Mediamodifier-Design-Template.png" alt="Logo">
+                    <h1 class="nav-title text-3xl">Perseus</h1>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer md:hidden"
+                    viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path fill="#000000" d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7
+                        128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 
+                        192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 
+                        128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 
+                        512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 
+                        512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 
+                        448L512 448C529.7 448 544 462.3 544 480z" />
+                </svg>
+
+
+
+                <nav class="nav-links text-lg font-bold text-gray-600 hidden md:flex">
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="#cardSlider">Feautured</a>
+                    <a href="#cardSlider1">Special</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+
+
+                </nav>
+
+                <!-- Mobile-->
+                <div id="mobile-menu"
+                    class="fixed top-0 right-0 h-full w-64 bg-[#cfc5bc] shadow-lg p-6 transform translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden flex flex-col gap-4 font-bold text-gray-700 text-lg">
+                    <a href="#" id="close-mobile-menu" class="mt-0 text-right text-[#810000]">✕</a>
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="#cardSlider">Featured</a>
+                    <a href="#cardSlider1">Special</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+
+                </div>
+
+
+
+            </header>
+
+
+        <section>
+            <div class="relative w-full overflow-hidden max-w-screen-xl mx-auto" style="height: 500px;">
+                <div id="slider" class="flex transition-transform duration-700 ease-in-out w-full h-full">
+
+                    <!-- Slide 1 -->
+                    <div class="w-full flex-shrink-0 relative">
+                        <img src="./images/1.jpg" alt="Banner 1" class="w-full h-full object-cover" />
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-end justify-center pr-20 text-white text-right">
+                            <h2 class="text-4xl font-bold mb-2">Summer Collection</h2>
+                            <p class="text-lg mb-4">Get 20% OFF on linen shirts and breezy tees</p>
+                            <button onclick="window.location.href = 'shop.html'"
+                                class="bg-red-600 hover:bg[#810000] text-white px-4 py-2 rounded hover:bg-[#810000] ">Shop
+                                Now</button>
+                        </div>
+                    </div>
+
+
+                    <!-- Slide 2 -->
+                    <div class="w-full flex-shrink-0 relative">
+                        <img src="./images/2.jpg" alt="Banner 2" class="w-full h-full object-cover" />
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-end justify-center pr-20 text-white text-right">
+                            <h2 class="text-4xl font-bold mb-2">Festival Ready</h2>
+                            <p class="text-lg mb-4">Up to 50% OFF on ethnic & festive styles</p>
+                            <button onclick="window.location.href = 'shop.html'"
+                                class="bg-red-600 hover:bg[#810000] text-white px-4 py-2 rounded hover:bg-[#810000]">Shop
+                                Now</button>
+                        </div>
+                    </div>
+
+
+                    <!-- Slide 3 -->
+                    <div class="w-full flex-shrink-0 relative">
+                        <img src="./images/3.jpg" alt="Banner 3" class="w-full h-full object-cover" />
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-end justify-center pr-20 text-white text-right">
+                            <h2 class="text-4xl font-bold mb-2">Accessories Sale</h2>
+                            <p class="text-lg mb-4">Flat 30% OFF on Bags, Belts, Caps & more</p>
+                            <button onclick="window.location.href = 'shop.html'"
+                                class="bg-red-600 hover:bg[#810000] text-white px-4 py-2 rounded hover:bg-[#810000]">Shop
+                                Now</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Left Arrow -->
+                <button id="prev"
+                    class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-40 hover:bg-opacity-70 p-2 rounded-full text-2xl">
+                    ❮
+                </button>
+
+                <!-- Right Arrow -->
+                <button id="next"
+                    class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-40 hover:bg-opacity-70 p-2 rounded-full text-2xl">
+                    ❯
+                </button>
+            </div>
+
+        </section>
+
+        <div class="brand-carousel-wrapper p-4">
+            <div class="brand-carousel" id="brand-carousel">
+                <div class="brand-item"><img src="./images/nike-logo-black-outline-18341.png"
+                        alt="Puma"><span>Nike</span></div>
+                <div class="brand-item"><img id="adidas" src="./images/Adidas-logo-1991-1-600x319.png"
+                        alt="Adidas"><span>Adidas</span></div>
+                <div class="brand-item"><img id="simple" src="./images/Mediamodifier-Design-Template.png" height="60"
+                        width="auto" alt="Simple"><span>𝒫𝓇𝒶𝒹𝑒𝑒𝓅</span></div>
+                <div class="brand-item"><img src="./images/tiktok-logo-4501.png" alt="Tiktok"><span>Tiktok</span></div>
+                <div class="brand-item"><img src="./images/behance-2161.png" alt="Behance"><span>Behance</span></div>
+                <div class="brand-item"><img src="./images/twitch-2178.png" alt="Twitch"><span>Twitch</span></div>
+                <div class="brand-item"><img src="./images/leaf-1550.png" alt="Leaves"><span>Leaves</span></div>
+                <div class="brand-item"><img src="./images/behance-2161.png" alt="Behance"><span>Behance</span></div>
+                <div class="brand-item"><img src="./images/tiktok-logo-4501.png" alt="Tiktok"><span>Tiktok</span></div>
+                <div class="brand-item"><img src="./images/leaf-1550.png" alt="Leaves"><span>Leaves</span></div>
+                <div class="brand-item"><img src="./images/nike-logo-black-outline-18341.png"
+                        alt="Puma"><span>Nike</span></div>
+                <div class="brand-item"><img id="adidas" src="./images/Adidas-logo-1991-1-600x319.png"
+                        alt="Adidas"><span>Adidas</span></div>
+                <div class="brand-item"><img id="simple" src="./images/Mediamodifier-Design-Template.png" height="60"
+                        width="auto" alt="Simple"><span>𝒫𝓇𝒶𝒹𝑒𝑒𝓅</span></div>
+                <div class="brand-item"><img src="./images/tiktok-logo-4501.png" alt="Tiktok"><span>Tiktok</span></div>
+                <div class="brand-item"><img src="./images/behance-2161.png" alt="Behance"><span>Behance</span></div>
+                <div class="brand-item"><img src="./images/twitch-2178.png" alt="Twitch"><span>Twitch</span></div>
+                <div class="brand-item"><img src="./images/leaf-1550.png" alt="Leaves"><span>Leaves</span></div>
+                <div class="brand-item"><img src="./images/behance-2161.png" alt="Behance"><span>Behance</span></div>
+                <div class="brand-item"><img src="./images/tiktok-logo-4501.png" alt="Tiktok"><span>Tiktok</span></div>
+                <div class="brand-item"><img src="./images/leaf-1550.png" alt="Leaves"><span>Leaves</span></div>
+            </div>
+        </div>
+
+
+        <section class="bg-transparent py-12">
+            <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center"
+                id="stats">
+
+                
+                <div>
+                    <h2 class="text-4xl font-extrabold text-[#810000]">10K+</h2>
+                    <p class="mt-2 text-gray-600">Happy Customers</p>
+                </div>
+
+            
+                <div>
+                    <h2 class="text-4xl font-extrabold text-[#810000]">200+</h2>
+                    <p class="mt-2 text-gray-600">Premium Brands</p>
+                </div>
+
+               
+                <div>
+                    <h2 class="text-4xl font-extrabold text-[#810000]">50+</h2>
+                    <p class="mt-2 text-gray-600">Awards Won</p>
+                </div>
+
+                
+                <div>
+                    <h2 class="text-4xl font-extrabold text-[#810000]">24/7</h2>
+                    <p class="mt-2 text-gray-600">Customer Support</p>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+        <section class="py-12 bg-white relative">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Featured Collections</h2>
+
+            <!-- Arrows -->
+            <button id="prevCard"
+                class="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-[#810000] text-white text-3xl rounded-full p-2 hover:bg-opacity-80">
+                ‹
+            </button>
+            <button id="nextCard"
+                class="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-[#810000] text-white text-3xl rounded-full p-2 hover:bg-opacity-80">
+                ›
+            </button>
+
+            <!-- Slider -->
+            <div id="cardSlider" class="overflow-hidden max-w-screen-xl mx-auto">
+                <div id="cardTrack" class="flex gap-4 px-4 transition-transform duration-300 w-max">
+
+                    <!-- Card 1 -->
+                    <div class="bg-white rounded-lg shadow-md w-64 flex-shrink-0">
+                        <img src="./images/11.jpg" alt="Casual Shirts" class="w-full h-40 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold">Casual Shirts</h3>
+                            <p class="text-sm text-gray-600 mb-3">Everyday comfort & style.</p>
+                            <button class="bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded" onclick="window.location.href = 'shop.html'">View
+                                Collection</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white rounded-lg shadow-md w-64 flex-shrink-0">
+                        <img src="./images/22.jpg" alt="Denim Jeans" class="w-full h-40 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold">Denim Jeans</h3>
+                            <p class="text-sm text-gray-600 mb-3">Fits that never go out of style.</p>
+                            <button onclick="window.location.href = 'shop.html'" class="bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">View
+                                Collection</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white rounded-lg shadow-md w-64 flex-shrink-0">
+                        <img src="./images/33.jpg" alt="Summer Dresses" class="w-full h-40 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold">Summer Dresses</h3>
+                            <p class="text-sm text-gray-600 mb-3">Breezy and beautiful picks.</p>
+                            <button onclick="window.location.href = 'shop.html'" class="bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">View
+                                Collection</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-white rounded-lg shadow-md w-64 flex-shrink-0">
+                        <img src="./images/44.jpg" alt="Ethnic Wear" class="w-full h-40 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold">Ethnic Wear</h3>
+                            <p class="text-sm text-gray-600 mb-3">Tradition with a twist.</p>
+                            <button onclick="window.location.href = 'shop.html'" class="bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">View
+                                Collection</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="bg-white rounded-lg shadow-md w-64 flex-shrink-0">
+                        <img src="./images/55.jpg" alt="Footwear" class="w-full h-40 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold">Footwear</h3>
+                            <p class="text-sm text-gray-600 mb-3">Stylish steps ahead.</p>
+                            <button onclick="window.location.href = 'shop.html'" class="bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">View
+                                Collection</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="bg-white rounded-lg shadow-md w-64 flex-shrink-0">
+                        <img src="./images/66.jpg" alt="Accessories" class="w-full h-40 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold">Accessories</h3>
+                            <p class="text-sm text-gray-600 mb-3">Caps, Belts, Bags & More.</p>
+                            <button onclick="window.location.href = 'shop.html'" class="bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">View
+                                Collection</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="bg-white rounded-lg shadow-md w-64 flex-shrink-0">
+                        <img src="./images/77.jpg" alt="Winter Jackets" class="w-full h-40 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold">Winter Jackets</h3>
+                            <p class="text-sm text-gray-600 mb-3">Warmth & fashion combined.</p>
+                            <button onclick="window.location.href = 'shop.html'" class="bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">View
+                                Collection</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="bg-white rounded-lg shadow-md w-64 flex-shrink-0">
+                        <img src="./images/88.jpg" alt="Sportswear" class="w-full h-40 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold">Sportswear</h3>
+                            <p class="text-sm text-gray-600 mb-3">Performance meets style.</p>
+                            <button onclick="window.location.href = 'shop.html'" class="bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">View
+                                Collection</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+        <section>
+            <div class="flex flex-row items-center justify-center gap-4 p-4 rounded-lg bg-[#cfc5bc] m-4 w-auto h-auto">
+                <img src="./images/kk.jpg" alt="off" class="w-1/2 h-auto rounded-lg">
+                <div class="w-1/2 h-auto gap-4">
+                    <h1 class="text-3xl font-bold mb-2">
+                        50% OFF ON ALL ETHNIC CLOTHES
+                    </h1>
+                    <P class="text-lg mb-2"> offer valid upto 24th dec</P>
+                    <button onclick="window.location.href = 'shop.html'" class="bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">Shop Now</button>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="py-12 bg-white relative">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-6 "
+                style="font-family: Cedarville Cursive, cursive; color: #810000">Luxurious Collections</h2>
+
+            <!-- Arrows 
+            <button id="prevCard1"
+                class="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-[#810000] text-white text-3xl rounded-full p-2 hover:bg-opacity-80">
+                ‹
+            </button>
+            <button id="nextCard2"
+                class="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-[#810000] text-white text-3xl rounded-full p-2 hover:bg-opacity-80">
+                ›
+            </button -->
+
+            <!-- Slider -->
+            <div id="cardSlider1" class="relative">
+                <div id="cardTrack1"
+                    class="w-full overflow-hidden place-items-center grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-5 ">
+                    <!-- Card 1 -->
+                    <div class="bg-white rounded-lg shadow-md w-64 flex-shrink-0">
+                        <img src="./images/111.jpg" alt="Casual Shirts" class="w-full h-40 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold">formal Shirts</h3>
+                            <p class="text-sm text-gray-600 mb-3">Everyday comfort & style.</p>
+                            <button onclick="window.location.href = 'shop.html'" class="bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">View
+                                Collection</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white rounded-lg shadow-md w-64 flex-shrink-0">
+                        <img src="./images/222.jpg" alt="Denim Jeans" class="w-full h-40 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold">Luxurious pants</h3>
+                            <p class="text-sm text-gray-600 mb-3">comfortable and trendy.</p>
+                            <button onclick="window.location.href = 'shop.html'" class="bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">View
+                                Collection</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white rounded-lg shadow-md w-64 flex-shrink-0">
+                        <img src="./images/333.jpg" alt="Summer Dresses" class="w-full h-40 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold">Suites</h3>
+                            <p class="text-sm text-gray-600 mb-3">warm and cozy.</p>
+                            <button onclick="window.location.href = 'shop.html'" class="bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">View
+                                Collection</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-white rounded-lg shadow-md w-64 flex-shrink-0">
+                        <img src="./images/444.jpg" alt="Ethnic Wear" class="w-full h-40 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold">Ethnic Wear</h3>
+                            <p class="text-sm text-gray-600 mb-3">Tradition with a twist.</p>
+                            <button onclick="window.location.href = 'shop.html'" class="bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">View
+                                Collection</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="bg-white rounded-lg shadow-md w-64 flex-shrink-0">
+                        <img src="./images/555.jpg" alt="Footwear" class="w-full h-40 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold">Footwear</h3>
+                            <p class="text-sm text-gray-600 mb-3">Comfortable steps ahead.</p>
+                            <button onclick="window.location.href = 'shop.html'" class="bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">View
+                                Collection</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="bg-white rounded-lg shadow-md w-64 flex-shrink-0">
+                        <img src="./images/666.jpg" alt="Accessories" class="w-full h-40 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold">Accessories</h3>
+                            <p class="text-sm text-gray-600 mb-3">Caps, Belts, Bags & More.</p>
+                            <button onclick="window.location.href = 'shop.html'" class="bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">View
+                                Collection</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="bg-white rounded-lg shadow-md w-64 flex-shrink-0">
+                        <img src="./images/777.jpg" alt="Winter Jackets" class="w-full h-40 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold">Winter Jackets</h3>
+                            <p class="text-sm text-gray-600 mb-3">Warmth & fashion combined.</p>
+                            <button onclick="window.location.href = 'shop.html'" class="bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">View
+                                Collection</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="bg-white rounded-lg shadow-md w-64 flex-shrink-0">
+                        <img src="./images/888.jpg" alt="Sportswear" class="w-full h-40 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold">Sportswear</h3>
+                            <p class="text-sm text-gray-600 mb-3">Performance meets style.</p>
+                            <button onclick="window.location.href = 'shop.html'"class="bg-[#810000] hover:bg-red-700 text-white px-4 py-2 rounded">View
+                                Collection</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+
+        <section class="max-w-6xl mx-auto px-4 py-10">
+            <h2 class="text-3xl font-bold text-center mb-6 text-gray-800">Customer Reviews</h2>
+            <p class="text-center mb-10 text-gray-600">Real words from our happy shoppers</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <p class="text-gray-700 mb-4">
+                        Absolutely love the quality! Fast shipping and excellent service. I’ll be ordering more soon.
+                    </p>
+                    <div class="flex justify-end space-x-1 text-yellow-400 text-lg">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                    </div>
+                </div>
+
+              
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <p class="text-gray-700 mb-4">
+                        The fabric is so soft and fits perfectly. Worth every penny. Highly recommend!
+                    </p>
+                    <div class="flex justify-end space-x-1 text-yellow-400 text-lg">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>☆</span>
+                    </div>
+                </div>
+
+                
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <p class="text-gray-700 mb-4">
+                        Stylish and affordable. Got compliments the first day I wore it. Amazing collection!
+                    </p>
+                    <div class="flex justify-end space-x-1 text-yellow-400 text-lg">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                    </div>
+                </div>
+
+                
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <p class="text-gray-700 mb-4">
+                        I had to exchange sizes and the process was smooth. Great support team.
+                    </p>
+                    <div class="flex justify-end space-x-1 text-yellow-400 text-lg">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>☆</span>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+        </section>
+
+        <footer class="bg-gray-900 text-white py-8">
+            <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+
+                <div class="flex items-center space-x-3 mb-4 md:mb-0">
+                    <img src="./images/Mediamodifier-Design-Template.png" alt="Logo" class="h-10 w-10 object-contain">
+                    <span class="text-xl font-bold" style="font-family: 'Cedarville Cursive', cursive;">Perseus</span>
+                </div>
+
+              
+                <div class="flex space-x-5">
+                    <a href="https://linkedin.com/in/pradeepkumarsurendiran" target="_blank"
+                        class="hover:text-blue-400 transition">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="https://instagram.com/pradeepkuar673atyt" target="_blank" class="hover:text-pink-500 transition">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="https://github.com/pradeepkumar673" target="_blank" class="hover:text-gray-400 transition">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://youtube.com/pradeep6734" target="_blank" class="hover:text-red-500 transition">
+                        <i class="fab fa-youtube text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+           
+            <div class="mt-6 text-center text-sm text-gray-400">
+                © 2025 Pradeepkumar. All rights reserved.
+            </div>
+        </footer>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
